@@ -1,363 +1,293 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <title>Portfolio Website</title>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Harvey Azarcon portfolio - AI assistant builder, automation systems developer, and digital workflow designer." />
+  <meta property="og:title" content="Harvey Azarcon | Harvox AI Assistant" />
+  <meta property="og:description" content="Portfolio for AI assistants, automation workflows, and digital systems." />
+  <meta property="og:image" content="assets/harvox-ai-assistant.png" />
+  <title>Harvey Azarcon | Harvox Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,400&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
 
-    <!-- Montserrat Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <header class="site-header" data-header>
+    <a class="brand" href="#hero" aria-label="Harvey Azarcon home">
+      <span class="brand-mark">H</span>
+      <span>
+        <strong>HARVOX</strong>
+        <small>AI Systems</small>
+      </span>
+    </a>
 
-    <!-- Material Icons -->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
-    <!-- Leaflet CSS -->
-    <link href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" rel="stylesheet">
+    <nav class="desktop-nav" aria-label="Primary navigation">
+      <a href="#hero" class="is-active">Home</a>
+      <a href="#about">About</a>
+      <a href="#capabilities">Capabilities</a>
+      <a href="#projects">Projects</a>
+      <a href="#learning">Learning</a>
+      <a href="#contact">Contact</a>
+    </nav>
 
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <a class="header-cta" href="https://www.linkedin.com/in/harvey-azarcon-5b4a0b18" target="_blank" rel="noopener">
+      <span>Connect</span>
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg>
+    </a>
 
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="css/styles.css">
-  </head>
-  <body>
-    <div class="container-fluid px-0">
-      <!-- Navbar -->
-      <nav class="navbar navbar-expand-lg navbar-light shadow">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="/">
-            <span class="material-symbols-outlined">piano</span>
-            Harvox Poge
-          </a>
-          <button
-            type="button"
-            class="navbar-toggler"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="container px-3">
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav ms-auto me-4 my-3 my-lg-0">
-                <li class="nav-item">
-                  <a class="nav-link me-lg-3" href="/">Home</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link me-lg-3" href="#about">About</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link me-lg-3" href="#projects">Projects</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link me-lg-3" href="#testimonials">Testimonials</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link me-lg-3" href="#contact">Contact</a>
-                </li>
-              </ul>
-            </div>
+    <button class="menu-button" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobileNav" data-menu-button>
+      <svg class="icon-menu" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      <svg class="icon-close" viewBox="0 0 24 24" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18"/></svg>
+    </button>
+  </header>
+
+  <nav class="mobile-nav" id="mobileNav" aria-label="Mobile navigation" data-mobile-nav>
+    <a href="#hero">Home</a>
+    <a href="#about">About</a>
+    <a href="#capabilities">Capabilities</a>
+    <a href="#projects">Projects</a>
+    <a href="#learning">Learning</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <main id="main">
+    <section class="hero section-frame" id="hero" data-section>
+      <div class="hero-media" aria-hidden="true">
+        <img src="assets/harvox-ai-assistant.png" alt="" />
+      </div>
+      <div class="hero-grid">
+        <div class="hero-copy reveal">
+          <div class="section-kicker"><span>01</span> Intro</div>
+          <h1>Harvey<br /><em>Azarcon</em></h1>
+          <p class="hero-role">AI Assistant Builder &amp; Digital Systems Developer</p>
+          <p class="hero-summary">
+            I design practical AI-assisted workflows, web interfaces, and automation systems that help people work faster, decide clearly, and turn ideas into usable tools.
+          </p>
+          <div class="hero-actions" aria-label="Portfolio actions">
+            <a class="button button-primary" href="#projects">
+              <span>View Projects</span>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </a>
+            <a class="button button-secondary" href="https://www.linkedin.com/in/harvey-azarcon-5b4a0b18" target="_blank" rel="noopener">
+              <span>LinkedIn Profile</span>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg>
+            </a>
           </div>
         </div>
-      </nav>
-      <!-- End Navbar -->
 
-      <!-- Hero -->
-      <header class="bg-light py-5">
-        <div class="container px-5">
-          <div class="row align-items-center">
-            <div class="col-lg-8 col-xl-7 col-xxl-6">
-              <div class="my-5">
-                <h2 class="text-center fw-bold mb-2">Hi! Ako nga pala si Harvox Poge,</h2>
-                <h2 class="text-primary text-center fw-bold mb-2">a full-stack web developer</h2>
-                <p class="lead text-muted mb-4">
-                  I specialize in building web applications using React and
-                  Django. Galingan nyo sa pagawa ng mga websites nyo ha!!!.
-                </p>
-                <div class="d-grid gap-3 d-sm-flex justify-content-center">
-                  <a class="btn btn-primary btn-large text-uppercase" href="#about">
-                    Learn More
-                    <span class="material-icons-outlined ms-2">help_outline</span>
-                  </a>
-                  <a class="btn btn-outline-primary btn-large text-uppercase" href="#projects">
-                    View My Work
-                    <span class="material-icons-outlined ms-2">manage_search</span>
-                  </a>
-                </div>
-              </div>
+        <aside class="hero-panel reveal" aria-label="Portfolio highlights">
+          <div class="signal-card">
+            <span class="signal-dot"></span>
+            <p>Harvox direction</p>
+            <strong>AI operations, workflow automation, and intelligent command experiences.</strong>
+          </div>
+          <div class="hero-stat-grid">
+            <div>
+              <span>Focus</span>
+              <strong>AI Assistants</strong>
             </div>
-            <div class="col-xl-5 col-xxl-6 justify-content-center">
-              <img class="img-fluid rounded-3 my-5" src="images/hero.jpeg" alt="Hero Image">
+            <div>
+              <span>Base</span>
+              <strong>Metro Manila</strong>
             </div>
           </div>
+        </aside>
+      </div>
+      <a class="scroll-cue" href="#about" aria-label="Scroll to about section">
+        <span>Scroll</span>
+        <i></i>
+      </a>
+    </section>
+
+    <section class="about section-frame split-section" id="about" data-section>
+      <div class="section-number" aria-hidden="true">02</div>
+      <div class="portrait-wrap reveal">
+        <img src="assets/harvey-azarcon-profile.png" alt="Formal portrait of Harvey Azarcon" />
+      </div>
+      <div class="section-copy reveal">
+        <div class="section-kicker"><span>02</span> About Me</div>
+        <h2>Solving complex problems with <em>intelligence and purpose.</em></h2>
+        <p>
+          Harvox is my personal AI assistant direction: a practical command layer for knowledge, workflow, and system operations. I combine structured thinking with hands-on prototyping to turn ideas into reliable digital experiences.
+        </p>
+        <p>
+          The portfolio is shaped around AI assistance, automation, web interfaces, and the kind of systems work that makes day-to-day operations easier to understand and act on.
+        </p>
+      </div>
+      <div class="meta-stack reveal" aria-label="Profile details">
+        <div>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-4.5 7-11a7 7 0 1 0-14 0c0 6.5 7 11 7 11Z"/><circle cx="12" cy="10" r="2.5"/></svg>
+          <span>Location</span>
+          <strong>Metro Manila, Philippines</strong>
         </div>
-      </header>
-      <!-- End Hero -->
+        <div>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16v13H4zM8 7V4h8v3"/></svg>
+          <span>Profile</span>
+          <strong>AI, automation, and systems</strong>
+        </div>
+        <div>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m12 3 2.6 5.3 5.9.9-4.2 4.1 1 5.8L12 16.4 6.7 19.1l1-5.8-4.2-4.1 5.9-.9z"/></svg>
+          <span>Work Style</span>
+          <strong>Practical, focused, iterative</strong>
+        </div>
+      </div>
+    </section>
 
-      <main>
-        <!-- About -->
-        <section id="about" class="text-center py-5">
-          <div class="container py-5">
-            <div class="row justify-content-center">
-              <h2 class="fw-bold">About</h2>
-              <p class="lead text-muted mb-5">
-                I am a freelance web developer who builds elegant, fast, and
-                scalable web applications.
-              </p>
+    <section class="capabilities section-frame" id="capabilities" data-section>
+      <div class="section-number" aria-hidden="true">03</div>
+      <div class="section-heading reveal">
+        <div class="section-kicker"><span>03</span> Capabilities</div>
+        <h2>What I build and improve.</h2>
+      </div>
+
+      <div class="capability-grid">
+        <article class="capability-card reveal">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 4h6v3h2a3 3 0 0 1 3 3v5a3 3 0 0 1-3 3h-1v2H8v-2H7a3 3 0 0 1-3-3v-5a3 3 0 0 1 3-3h2zM8 12h.01M16 12h.01"/></svg>
+          <h3>AI Assistant Development</h3>
+          <p>Designing assistant experiences that help users ask better questions, retrieve context, and move from answers to action.</p>
+        </article>
+        <article class="capability-card reveal">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h7v7H4zM13 10h7v7h-7zM11 10h2M7.5 14v3h5.5"/></svg>
+          <h3>Workflow Automation</h3>
+          <p>Reducing repetitive work through practical automations, clearer handoffs, and tools that support repeatable operations.</p>
+        </article>
+        <article class="capability-card reveal">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m8 18-6-6 6-6M16 6l6 6-6 6M14 4l-4 16"/></svg>
+          <h3>Systems &amp; Web Interfaces</h3>
+          <p>Building responsive, usable interfaces for dashboards, command centers, knowledge tools, and digital services.</p>
+        </article>
+        <article class="capability-card reveal">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4c4.4 0 8 1.3 8 3s-3.6 3-8 3-8-1.3-8-3 3.6-3 8-3zM4 7v5c0 1.7 3.6 3 8 3s8-1.3 8-3V7M4 12v5c0 1.7 3.6 3 8 3s8-1.3 8-3v-5"/></svg>
+          <h3>Data &amp; API Integration</h3>
+          <p>Connecting tools, data sources, and service workflows so information can move cleanly between people and systems.</p>
+        </article>
+        <article class="capability-card reveal">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 4 6v6c0 4.5 3.2 7.5 8 9 4.8-1.5 8-4.5 8-9V6zM9 12l2 2 4-5"/></svg>
+          <h3>Digital Strategy</h3>
+          <p>Turning broad goals into scoped builds, clear roadmaps, and prototypes that can be tested before they become expensive.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="projects section-frame" id="projects" data-section>
+      <div class="section-number" aria-hidden="true">04</div>
+      <div class="section-heading reveal">
+        <div class="section-kicker"><span>04</span> Featured Projects</div>
+        <h2>Selected work directions.</h2>
+      </div>
+
+      <div class="project-layout">
+        <article class="featured-project reveal">
+          <div class="project-image">
+            <img src="assets/harvox-ai-assistant.png" alt="Harvox AI Assistant cinematic interface" />
+          </div>
+          <div class="project-copy">
+            <span>Primary Project</span>
+            <h3>Harvox AI Assistant</h3>
+            <p>
+              A personal AI assistant concept built around practical command workflows, knowledge retrieval, operational context, and clear user-facing responses.
+            </p>
+            <div class="tag-row" aria-label="Harvox project tags">
+              <span>AI Assistant</span>
+              <span>Automation</span>
+              <span>Workflow UX</span>
+              <span>Systems Thinking</span>
             </div>
           </div>
-          <div class="container mb-5">
-            <div class="row">
-              <div class="col-lg-4 mx-auto mb-5">
-                <div class="d-flex mb-5 about">
-                  <span class="material-icons-outlined m-auto text-primary">palette</span>
-                </div>
-                <h5>Design</h5>
-                <p class="text-muted mb-0">
-                  I create beautiful, modern designs optimized for multiple
-                  color modes (light and dark themes).
-                </p>
-              </div>
-              <div class="col-lg-4 mx-auto mb-5">
-                <div class="d-flex mb-5 about">
-                  <span class="material-icons-outlined m-auto text-primary">code</span>
-                </div>
-                <h5>Development</h5>
-                <p class="text-muted mb-0">
-                  I develop responsive, scalable, and fast applications using
-                  the best standards and coding practices.
-                </p>
-              </div>
-              <div class="col-lg-4 mx-auto mb-5">
-                <div class="d-flex mb-5 about">
-                  <span class="material-icons-outlined m-auto text-primary">settings</span>
-                </div>
-                <h5>Launch & Maintenance</h5>
-                <p class="text-muted mb-0">
-                  Once the application is ready, I will help you launch it and
-                  teach you how to update and maintain it.
-                </p>
-              </div>
+        </article>
+
+        <div class="project-stack">
+          <article class="project-card reveal">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h16v14H4zM8 9h8M8 13h4M16 13h.01"/></svg>
+            <div>
+              <h3>Harvox Command Center</h3>
+              <p>Operational dashboard direction for surfacing alerts, tickets, incidents, and AI-powered next steps in one calm command view.</p>
             </div>
-          </div>
-        </section>
-        <!-- End About -->
-
-        <hr>
-
-        <!-- Projects -->
-        <section id="projects" class="text-center py-5">
-          <div class="container py-5">
-            <div class="row justify-content-center">
-              <h2 class="fw-bold">Projects</h2>
-              <p class="lead text-muted mb-5">View some of my latest projects</p>
+          </article>
+          <article class="project-card reveal">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h4l3-7 4 14 3-7h2"/></svg>
+            <div>
+              <h3>Business Process Automation</h3>
+              <p>Workflow mapping and automation concepts for repetitive tasks, status visibility, and faster follow-through.</p>
             </div>
-          </div>
-          <div class="container mb-5">
-            <div class="row">
-              <div class="col-lg-4 mx-auto mb-5">
-                <div class="card h-100 shadow-lg border-0 bg-light">
-                  <img class="card-img-top" src="images/project1.png" alt="Project 1">
-                  <div class="card-body p-4">
-                    <h5 class="card-title mb-3">Cryptocurrency Dashboard</h5>
-                    <div class="mb-2">
-                      <div class="badge bg-primary rounded-pill">Django</div>
-                      <div class="badge bg-primary rounded-pill">React</div>
-                      <div class="badge bg-primary rounded-pill">Material UI</div>
-                    </div>
-                    <p class="card-text">
-                      A cryptocurrency dashboard app built using React 17,
-                      Material UI 5 and Chart.js 3.
-                    </p>
-                  </div>
-                  <div class="card-footer bg-transparent mb-3">
-                    <a
-                      class="btn btn-outline-primary btn-sm text-uppercase"
-                      href="https://github.com/BobsProgrammingAcademy/cryptocurrency-dashboard"
-                      target="_blank"
-                    >
-                      <span class="material-icons-outlined me-1">code</span>
-                      Source Code
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-4 mx-auto mb-5">
-                <div class="card h-100 shadow-lg border-0 bg-light">
-                  <img class="card-img-top" src="images/project2.png" alt="Project 2">
-                  <div class="card-body p-4">
-                    <h5 class="card-title mb-3">Portfolio Website</h5>
-                    <div class="mb-2">
-                      <div class="badge bg-primary rounded-pill">Django</div>
-                      <div class="badge bg-primary rounded-pill">React</div>
-                      <div class="badge bg-primary rounded-pill">Material UI</div>
-                    </div>
-                    <p class="card-text">
-                      A portfolio website built using Django 3, Next.js 12 and
-                      Material UI 5 that uses a PostgreSQL database to store
-                      data.
-                    </p>
-                  </div>
-                  <div class="card-footer bg-transparent mb-3">
-                    <a
-                      class="btn btn-outline-primary btn-sm text-uppercase"
-                      href="https://github.com/BobsProgrammingAcademy/portfolio-website"
-                      target="_blank"
-                    >
-                      <span class="material-icons-outlined me-1">code</span>
-                      Source Code
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-4 mx-auto mb-5">
-                <div class="card h-100 shadow-lg border-0 bg-light">
-                  <img class="card-img-top" src="images/project3.png" alt="Project 3">
-                  <div class="card-body p-4">
-                    <h5 class="card-title mb-3">Image Classification</h5>
-                    <div class="mb-2">
-                      <div class="badge bg-primary rounded-pill">Django</div>
-                      <div class="badge bg-primary rounded-pill">React</div>
-                      <div class="badge bg-primary rounded-pill">Material UI</div>
-                    </div>
-                    <p class="card-text">
-                      An image classification app built using TensorFlow 2,
-                      Django 3, React 17 and Material UI 5.
-                    </p>
-                  </div>
-                  <div class="card-footer bg-transparent mb-3">
-                    <a
-                      class="btn btn-outline-primary btn-sm text-uppercase"
-                      href="https://github.com/BobsProgrammingAcademy/image-classification-mnist"
-                      target="_blank"
-                    >
-                      <span class="material-icons-outlined me-1">code</span>
-                      Source Code
-                    </a>
-                  </div>
-                </div>
-              </div>
+          </article>
+          <article class="project-card reveal">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 5h18v14H3zM3 9h18M8 13h8"/></svg>
+            <div>
+              <h3>Portfolio Web Experience</h3>
+              <p>This site: a responsive personal brand system combining editorial structure, cinematic AI visuals, and concise professional storytelling.</p>
             </div>
-          </div>
-        </section>
-        <!-- End Projects -->
+          </article>
+        </div>
+      </div>
+    </section>
 
-        <hr>
+    <section class="learning section-frame" id="learning" data-section>
+      <div class="section-number" aria-hidden="true">05</div>
+      <div class="section-heading reveal">
+        <div class="section-kicker"><span>05</span> Learning</div>
+        <h2>Growing across AI, cloud, and secure digital work.</h2>
+      </div>
 
-        <!-- Testimonials -->
-        <section id="testimonials" class="text-center py-5">
-          <div class="container py-5">
-            <div class="row justify-content-center">
-              <h2 class="fw-bold">Testimonials</h2>
-              <p class="lead text-muted mb-5">Check what clients have said about my work</p>
-            </div>
-          </div>
-          <div class="container mb-5">
-            <div class="row">
-              <div class="col-lg-4 mx-auto mb-5">
-                <div class="text-center fs-4 fst-italic mb-4 px-2">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
-                  quis elit ut tellus tempus pharetra.
-                </div>
-                <div class="d-flex align-items-center justify-content-center testimonial">
-                  <img class="rounded-circle me-3" src="images/user1.png" alt="User 1">
-                  <div class="fw-bold">
-                    Amy Jones
-                    <span class="text-primary mx-1">/</span>
-                    CEO, Company 1
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-4 mx-auto mb-5">
-                <div class="text-center fs-4 fst-italic mb-4 px-2">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
-                  quis elit ut tellus tempus pharetra.
-                </div>
-                <div class="d-flex align-items-center justify-content-center testimonial">
-                  <img class="rounded-circle me-3" src="images/user2.png" alt="User 2">
-                  <div class="fw-bold">
-                    James Smith
-                    <span class="text-primary mx-1">/</span>
-                    CEO, Company 2
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-4 mx-auto mb-5">
-                <div class="text-center fs-4 fst-italic mb-4 px-2">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
-                  quis elit ut tellus tempus pharetra.
-                </div>
-                <div class="d-flex align-items-center justify-content-center testimonial">
-                  <img class="rounded-circle me-3" src="images/user3.png" alt="User 3">
-                  <div class="fw-bold">
-                    Mary Richards
-                    <span class="text-primary mx-1">/</span>
-                    CEO, Company 3
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-        <!-- End Testimonials -->
+      <div class="learning-grid">
+        <article class="learning-card reveal">
+          <span>AI</span>
+          <h3>Assistant Systems</h3>
+          <p>Prompting, retrieval patterns, response quality, and human-centered AI workflows.</p>
+        </article>
+        <article class="learning-card reveal">
+          <span>Cloud</span>
+          <h3>Enterprise Foundations</h3>
+          <p>Operational reliability, integrations, service thinking, and scalable platform habits.</p>
+        </article>
+        <article class="learning-card reveal">
+          <span>Security</span>
+          <h3>Digital Safety</h3>
+          <p>Security-aware design, careful data handling, and practical risk reduction.</p>
+        </article>
+        <article class="learning-card reveal">
+          <span>Code</span>
+          <h3>Python &amp; JavaScript</h3>
+          <p>Building usable tools, dashboards, automations, and interactive browser experiences.</p>
+        </article>
+      </div>
+    </section>
 
-        <hr>
+    <section class="contact section-frame" id="contact" data-section>
+      <div class="section-number" aria-hidden="true">06</div>
+      <div class="contact-copy reveal">
+        <div class="section-kicker"><span>06</span> Get In Touch</div>
+        <h2>Let us build something <em>intelligent together.</em></h2>
+        <p>Open to conversations around AI assistants, automation, web systems, and digital workflow ideas.</p>
+      </div>
+      <div class="contact-links reveal">
+        <a href="https://www.linkedin.com/in/harvey-azarcon-5b4a0b18" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2zM4 3a2 2 0 1 1 0 4 2 2 0 0 1 0-4z"/></svg>
+          <span>
+            <strong>LinkedIn</strong>
+            linkedin.com/in/harvey-azarcon-5b4a0b18
+          </span>
+        </a>
+        <a href="#hero">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+          <span>
+            <strong>Back to top</strong>
+            Review the portfolio
+          </span>
+        </a>
+      </div>
+    </section>
+  </main>
 
-        <!-- Contact -->
-        <section id="contact" class="text-center py-5">
-          <div class="container py-5">
-            <div class="row justify-content-center">
-              <h2 class="fw-bold">Contact</h2>
-              <p class="lead text-muted mb-5">
-                Do you need a full-stack web developer? I would love to hear
-                from you.
-              </p>
-            </div>
-          </div>
-          <div class="container mb-5">
-            <div class="row">
-              <div class="col-xl-5 col-xxl-6 mb-5">
-                <div id="map"></div>
-              </div>
-              <div class="col-lg-8 col-xl-7 col-xxl-6 mb-5">
-                <div class="mb-5">
-                  <h6 class="text-uppercase mb-2">Address</h6>
-                  <p class="lead mb-0">Dublin, Ireland</p>
-                </div>
-                <div class="mb-5">
-                  <h6 class="text-uppercase mb-2">Phone</h6>
-                  <p class="lead mb-0">123123123</p>
-                </div>
-                <div class="mb-5">
-                  <h6 class="text-uppercase mb-2">Email</h6>
-                  <p class="lead mb-0">bobsprogrammingacademy@gmail.com</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-        <!-- End Contact -->
-      </main>
-    </div>
+  <footer class="site-footer">
+    <span>&copy; <span data-year></span> Harvey Azarcon. All rights reserved.</span>
+    <span>Built with purpose. Driven by innovation.</span>
+  </footer>
 
-    <hr>
-
-    <!-- Footer -->
-    <footer class="text-center py-4">
-      <div class="container px-5 mb-2">Copyright &copy; 2022 Bob's Programming Academy.</div>
-    </footer>
-    <!-- End Footer -->
-
-    <!-- Leaflet JS -->
-    <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"></script>
-
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
-
-    <!-- Custom JS -->
-    <script src="js/scripts.js"></script>
-  </body>
+  <script src="script.js"></script>
+</body>
 </html>
